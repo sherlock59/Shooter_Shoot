@@ -1,4 +1,4 @@
-public class Player {
+public class Player { //testing
 	private String name;
 	private int attempts; 
 	private int madeAttempts;
