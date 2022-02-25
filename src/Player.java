@@ -1,25 +1,32 @@
 public class Player { //testing
 	private String name;
-	private int attempts; 
-	private int madeAttempts;
-	private int num1shots;
-	private int num2shots;
-	private int num3shots;
+	private int number;
 	private int fouls;
 	
-	public Player(String name, int attempts, int madeAttempts, int num1shots, int num2shots, int num3shots, int fouls) {
-		super();
-		this.name = null;
-		this.attempts = 0;
-		this.madeAttempts = 0;
-		this.num1shots = 0;
-		this.num2shots = 0;
-		this.num3shots = 0;
-		this.fouls = 0;
-	}
-
+	private int attempt_1shots;
+	private int attempt_2shots;
+	private int attempt_3shots;
+	
+	private int made_1shots;
+	private int made_2shots;
+	private int made_3shots;
+	
 	public Player() {
-		// TODO Auto-generated constructor stub
+		this.name = null;
+		this.number = 0;
+		this.fouls = 0;
+		this.attempt_1shots = 0;
+		this.attempt_2shots = 0;
+		this.attempt_3shots = 0;
+		this.made_1shots = 0;
+		this.made_2shots = 0;
+		this.made_3shots = 0;
+	}
+	
+	public Player(String name, int number) {
+		this();
+		this.name = name;
+		this.number = number;
 	}
 
 	public String getName() {
@@ -30,54 +37,47 @@ public class Player { //testing
 		this.name = name;
 	}
 
-	public int getAttempts() {
-		return attempts;
+	public int getNumber() {
+		return number;
 	}
 
-	public void setAttempts(int attempts) {
-		this.attempts = attempts;
-	}
-
-	public int getMadeAttempts() {
-		return madeAttempts;
-	}
-
-	public void setMadeAttempts(int madeAttempts) {
-		this.madeAttempts = madeAttempts;
-	}
-
-	public int getNum1shots() {
-		return num1shots;
-	}
-
-	public void setNum1shots(int num1shots) {
-		this.num1shots = num1shots;
-	}
-
-	public int getNum2shots() {
-		return num2shots;
-	}
-
-	public void setNum2shots(int num2shots) {
-		this.num2shots = num2shots;
-	}
-
-	public int getNum3shots() {
-		return num3shots;
-	}
-
-	public void setNum3shots(int num3shots) {
-		this.num3shots = num3shots;
+	public void setNumber(int number) {
+		this.number = number;
 	}
 
 	public int getFouls() {
 		return fouls;
 	}
 
-	public void setFouls(int fouls) {
-		this.fouls = fouls;
+	public void foul() {
+		fouls++;
 	}
 
+	public int getAttempt_1shots() {
+		return attempt_1shots;
+	}
+
+	public int getAttempt_2shots() {
+		return attempt_2shots;
+	}
+
+	public int getAttempt_3shots() {
+		return attempt_3shots;
+	}
+
+	public int getMade_1shots() {
+		return made_1shots;
+	}
+
+	public int getMade_2shots() {
+		return made_2shots;
+	}
+
+	public int getMade_3shots() {
+		return made_3shots;
+	}
+	
+	public void shot
 
 	
 	
