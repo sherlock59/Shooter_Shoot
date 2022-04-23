@@ -10,7 +10,7 @@ public class Player { //testing
 	private int made_1shots;
 	private int made_2shots;
 	private int made_3shots;
-	;
+
 	public Player() {
 		this.name = null;
 		this.number = 0;
